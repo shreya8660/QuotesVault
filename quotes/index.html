@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Vault | Your Daily Inspiration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">QuoteVault</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="genres">Genres</a>
+            <a href="#" class="nav-link" data-page="daily">Daily Quote</a>
+            <a href="#" class="nav-link" data-page="favorites">My Favorites</a>
+            <a href="#" class="nav-link" data-page="about">About Us</a>
+        </div>
+        <button class="login-btn" data-page="login">Log In</button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="app">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1>Online Quote Library <br>for Daily Inspiration</h1>
+                <div class="hero-buttons">
+                    <button class="primary-btn">Get Started</button>
+                    <button class="secondary-btn">Learn More</button>
+                </div>
+                <div class="stats">
+                    <div class="stat">10,000+ quotes</div>
+                    <div class="stat">500+ authors</div>
+                    <div class="stat">25+ genres</div>
+                </div>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card pink">
+                    <h3>Motivational Quotes</h3>
+                    <p>Daily boosts for your mindset</p>
+                    <div class="card-icon smile"></div>
+                </div>
+                <div class="category-card blue">
+                    <h3>Classic Literature</h3>
+                    <p>Timeless wisdom from great books</p>
+                    <div class="card-icon book"></div>
+                </div>
+                <div class="category-card yellow">
+                    <h3>Philosophical Thoughts</h3>
+                    <p>Deep insights on life and existence</p>
+                    <div class="card-icon star"></div>
+                </div>
+                <div class="category-card purple">
+                    <h3>Modern Wisdom</h3>
+                    <p>Contemporary thinkers and leaders</p>
+                    <div class="card-icon bolt"></div>
+                </div>
+                <div class="category-card white">
+                    <h3>Love & Romance</h3>
+                    <p>Expressions of the heart</p>
+                    <div class="card-icon heart"></div>
+                </div>
+                <div class="category-card lightblue">
+                    <h3>Humor & Wit</h3>
+                    <p>Clever observations that amuse</p>
+                    <div class="card-icon laugh"></div>
+                </div>
+                <div class="category-card pink">
+                    <h3>Science & Discovery</h3>
+                    <p>Words from great minds</p>
+                    <div class="card-icon atom"></div>
+                </div>
+                <div class="category-card yellow">
+                    <h3>Daily Affirmations</h3>
+                    <p>Positive statements for your day</p>
+                    <div class="card-icon sun"></div>
+                </div>
+            </div>
+
+            <div class="subscription-box">
+                <h2>Start your journey with QuoteVault</h2>
+                <form class="subscription-form">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="password" placeholder="Password">
+                    <button class="submit-btn">Register</button>
+                </form>
+            </div>
+
+            <div class="pricing-section">
+                <h2>Choose your perfect plan</h2>
+                <div class="pricing-toggle">
+                    <span class="active">Monthly</span>
+                    <span>Annual</span>
+                </div>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <h3>Free Plan</h3>
+                        <ul>
+                            <li>Access to 1000+ quotes</li>
+                            <li>Daily quote delivery</li>
+                            <li>Basic search functionality</li>
+                            <li>Ad-supported experience</li>
+                        </ul>
+                        <div class="price">$0 / mo</div>
+                        <button class="pricing-btn">Select</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <h3>Premium Plan</h3>
+                        <ul>
+                            <li>Access to ALL quotes</li>
+                            <li>Custom quote collections</li>
+                            <li>Advanced filtering options</li>
+                            <li>Ad-free experience</li>
+                            <li>Quote wallpapers</li>
+                        </ul>
+                        <div class="price">$7.99 / mo</div>
+                        <button class="pricing-btn">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collections-section">
+                <h2>Featured Collections</h2>
+                <div class="collection-cards">
+                    <div class="collection-card">
+                        <div class="collection-icon inspiration"></div>
+                        <h3>Mindfulness</h3>
+                        <p>23 quotes</p>
+                        <button class="view-btn">View</button>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-icon geometry"></div>
+                        <h3>Stoicism</h3>
+                        <p>41 quotes</p>
+                        <button class="view-btn">View</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Page -->
+        <section id="login" class="page">
+            <div class="login-container">
+                <h2>Welcome Back Cutie</h2>
+                <div class="login-form">
+                    <input type="email" placeholder="Email Address">
+                    <input type="password" placeholder="Password">
+                    <button class="login-submit">Sign In</button>
+                    <div class="login-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <div class="social-login">
+                        <button class="social-btn google">Continue with Google</button>
+                        <button class="social-btn facebook">Continue with Facebook</button>
+                    </div>
+                    <div class="register-prompt">
+                        <p>Don't have an account? <a href="#" class="text-link register-btn" data-page="register">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+
+        <!-- Genres Page -->
+        <section id="genres" class="page">
+            <h1>Browse Quote Genres</h1>
+            <div class="genres-grid">
+                <div class="genre-card">
+                    <div class="genre-icon"></div>
+                    <h3>Motivation</h3>
+                    <p>Fuel your drive and ambition</p>
+                    <button class="view-genre">Explore</button>
+                </div>
+                <div class="genre-card">
+                    <div class="genre-icon"></div>
+                    <h3>Success</h3>
+                    <p>Insights from achievers</p>
+                    <button class="view-genre">Explore</button>
+                </div>
+                <div class="genre-card">
+                    <div class="genre-icon"></div>
+                    <h3>Love</h3>
+                    <p>Words of affection and devotion</p>
+                    <button class="view-genre">Explore</button>
+                </div>
+                <div class="genre-card">
+                    <div class="genre-icon"></div>
+                    <h3>Friendship</h3>
+                    <p>Celebrating human connections</p>
+                    <button class="view-genre">Explore</button>
+                </div>
+                <div class="genre-card">
+                    <div class="genre-icon"></div>
+                    <h3>Humor</h3>
+                    <p>Witty remarks and observations</p>
+                    <button class="view-genre">Explore</button>
+                </div>
+                <div class="genre-card">
+                    <div class="genre-icon"></div>
+                    <h3>Wisdom</h3>
+                    <p>Timeless insights on life</p>
+                    <button class="view-genre">Explore</button>
+                </div>
+                <div class="genre-card">
+                    <div class="genre-icon"></div>
+                    <h3>Nature</h3>
+                    <p>Celebrating the natural world</p>
+                    <button class="view-genre">Explore</button>
+                </div>
+                <div class="genre-card">
+                    <div class="genre-icon"></div>
+                    <h3>Art</h3>
+                    <p>Creative expression and beauty</p>
+                    <button class="view-genre">Explore</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other pages would go here -->
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">QuoteVault</div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Features</h4>
+                    <a href="#">Quote Categories</a>
+                    <a href="#">Collections</a>
+                    <a href="#">Daily Quote</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"></a>
+                        <a href="#" class="social-icon"></a>
+                        <a href="#" class="social-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© 2025 QuoteVault. All rights reserved.</div>
+    </footer>
+</body>
+</html>
